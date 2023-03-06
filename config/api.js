@@ -16,7 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // set up router
 app.post("/api/query", sql.executeQuery);
-app.post("/api/")
 
 // create export
 const config = {

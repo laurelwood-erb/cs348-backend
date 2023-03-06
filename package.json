@@ -16,9 +16,6 @@
     "nodemon": "^2.0.21"
   },
   "scripts": {
-    "table": "node src/script/tables",
-    "populate": "node src/script/populate",
-    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development nodemon app"
   },

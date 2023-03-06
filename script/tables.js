@@ -55,7 +55,7 @@ const tables = [
           DST  varchar(1),
           primary key (id))`,
   `CREATE TABLE IF NOT EXISTS Route
-          (id int,
+          (id int NOT NULL AUTO_INCREMENT,
           airline_id numeric(5,0),
           source_airport_id numeric(5,0),
           destination_airport_id numeric(5,0),
@@ -71,7 +71,7 @@ const tables = [
           ICAO varchar(5),
           primary key (IATA, ICAO))`,
   `CREATE TABLE IF NOT EXISTS Flight
-          (id int,
+          (id int NOT NULL AUTO_INCREMENT,
           flight_status varchar(9),
           flight_Date varchar(10),
           route_id int,
