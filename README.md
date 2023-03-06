@@ -1,34 +1,61 @@
-<!-- @format -->
+# Backend for CS348 Group Project by Laurelwood-Erb (PG13)
 
-# Setup
+## Requirements
+- You need followings installed in your device
+  1. `npm` (Essentially `Node.js`)
+  2. `MySQL`, which can be downloaded <a href="https://dev.mysql.com/downloads/mysql/">here</a>
 
-### 1. Download necassary packages
+<br>
 
-Run `npm i` on the root level of the backend directory
+## Running Our Application
+<u>**Please follow these steps carefully**</u>
 
-### 2. Download mysql
+1. Clone our two repositories:
+<br>
+Frontend - https://github.com/laurelwood-erb/cs348-frontend
+Backend -  https://github.com/laurelwood-erb/cs348-backend
+<br>
+using either `$ git clone` or simply download
+For frontend instructions, click the link of the above frontend repo.
 
-you must have mysql downloaded. You can download it from "https://dev.mysql.com/downloads/mysql/". Once downloaded, it will prompt you to set your password. Please replace DATABASE_PASSWORD in script/populate.js and script/tables.js.
+2. Install necessary packages for *backend* and start its application
+    1. In the backend repo, execute this command
+        ```
+        $ npm i
+        ```
+    2. Execute following commands one by one to create and populate tables and data
+        ```
+        $ npm run table
+        $ npm run populate
+        ```
+        If the above `populate` script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
+    3. Start the backend server by executing this command
+        ```
+        $ npm run start
+        ```
+        We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
+        
+        e.g. POST request to http://localhost:8080/api/query with header set to 
+        ```
+        { 'Content-Type': 'application/json' }
+        ```
+        and body set to 
+        ```
+        { 'query': 'SELECT \* FROM airplane LIMIT 10' }
+        ```
 
-### 3. Create tables
+<br>
 
-Run `npm run table`. This will create all our tables.
+## Create and Load Sample DataBase
+- As quickly mentioned in step 2.2, our database is loaded and created by running those two "script" files
+- `./src/script/tables.js` will be responsible for creating necessary tables
+- `./src/script/populate.js` will be acting as a script which takes in `.csv` files to populate appropriate data for `MySQL` 
 
-### 4. Populate data
+<br>
 
-Run `npm run populate`. This will populate our data.
+## Features Supported
 
-If the above script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
-
-### 5. Start up the server
-
-Finally, run `npm run start` to start up the backend server. We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
-
-e.g. POST request to http://localhost:8080/api/query with header set to 
-```
-{ 'Content-Type': 'application/json' }
-```
-and body set to 
-```
-{ 'query': 'SELECT \* FROM airplane LIMIT 10' }
-```
+Following is the list of features that we are currently supporting
+-  *How many countries does this airline operate in?*
+   -  By "operate", we mean that airlines who have route arriving/leaving a country
+   -  Our feature will count number of countries that an airline operates
