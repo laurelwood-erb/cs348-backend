@@ -21,6 +21,7 @@
 1. Clone our two repositories:
 <br>
 - Frontend: https://github.com/laurelwood-erb/cs348-frontend
+<br>
 - Backend:  https://github.com/laurelwood-erb/cs348-backend
 <br>
 - Use either `$ git clone` or simply download
