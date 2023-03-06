@@ -22,11 +22,7 @@ run `node script/populate`. This will populate our data.
 
 finally, run `node app.js` to start up the backend server. We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
 
-<<<<<<< HEAD
-e.g. POST to http://localhost:8081/api/query with header set to 
-=======
 e.g. POST request to http://localhost:8080/api/query with header set to 
->>>>>>> 260ad5b (localhost port)
 ```
 { 'Content-Type': 'application/json' }
 ```
