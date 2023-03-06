@@ -18,6 +18,8 @@ run `node script/tables`. This will create all our tables.
 
 run `node script/populate`. This will populate our data.
 
+If the above script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
+
 ### 5. Start up the server
 
 finally, run `node app.js` to start up the backend server. We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
