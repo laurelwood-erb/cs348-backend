@@ -4,6 +4,14 @@
 - You need followings installed in your device
   1. `npm` (Essentially `Node.js`)
   2. `MySQL`, which can be downloaded <a href="https://dev.mysql.com/downloads/mysql/">here</a>
+- You need to <u>**modify foloowing components in source code**</u>
+  - Under root directory for the backend, move to `./src/script` directory
+  - Find `populate.js` and `tables.js` inside it
+  - Find a variable declaration with following line
+    ```JS
+    const DATABASE_PASSWORD = "123456789";
+    ```
+  - Change RHS of declaration with your own password to `MySQL`
 
 <br>
 
@@ -12,11 +20,11 @@
 
 1. Clone our two repositories:
 <br>
-Frontend - https://github.com/laurelwood-erb/cs348-frontend
-Backend -  https://github.com/laurelwood-erb/cs348-backend
+- Frontend: https://github.com/laurelwood-erb/cs348-frontend
+- Backend:  https://github.com/laurelwood-erb/cs348-backend
 <br>
-using either `$ git clone` or simply download
-For frontend instructions, click the link of the above frontend repo.
+- Use either `$ git clone` or simply download
+- For frontend instructions, click the link of the above frontend repo.
 
 2. Install necessary packages for *backend* and start its application
     1. In the backend repo, execute this command
@@ -43,6 +51,7 @@ For frontend instructions, click the link of the above frontend repo.
         ```
         { 'query': 'SELECT \* FROM airplane LIMIT 10' }
         ```
+3. As mentioned, run our front-end application, which its instruction to run the application can be found <a href="https://github.com/laurelwood-erb/cs348-frontend">here</a>
 
 <br>
 
