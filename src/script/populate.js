@@ -22,27 +22,27 @@ const connection = mysql.createConnection({
 const data = [
   {
     name: "airline",
-    path: path.join(__dirname, "../data/airlines.csv"),
+    path: path.join(__dirname, "../../data/airlines.csv"),
     query:
       "INSERT INTO Airline (id, name, alias, IATA, ICAO, callsign, country, active) VALUES ?",
     indices: [0, 1, 2, 3, 4, 5, 6, 7],
   },
   {
     name: "airplane",
-    path: path.join(__dirname, "../data/airplanes.csv"),
+    path: path.join(__dirname, "../..//data/airplanes.csv"),
     query: "INSERT INTO Airplane (name, IATA, ICAO) VALUES ?",
     indices: [0, 1, 2],
   },
   // {
   //   name: "airport",
-  //   path: path.join(__dirname, "../data/airports.csv"),
+  //   path: path.join(__dirname, "../../data/airports.csv"),
   //   query:
   //     "INSERT INTO Airport (id, name, city, country, IATA, ICAO, latitude, longitude, altitude, timezone, DST) VALUES ?",
   //   indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   // },
   // {
   //   name: "route",
-  //   path: path.join(__dirname, "../data/routes.csv"),
+  //   path: path.join(__dirname, "../../data/routes.csv"),
   //   query:
   //     "INSERT INTO Route (id, airline_id, source_airport_id, destination_airport_id, codeshare, equipment) VALUES ?",
   //   indices: [1, 3, 5, 6, 8],

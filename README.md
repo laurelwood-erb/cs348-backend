@@ -4,7 +4,7 @@
 
 ### 1. Download necassary packages
 
-run `npm i` on the root level of the backend directory
+Run `npm i` on the root level of the backend directory
 
 ### 2. Download mysql
 
@@ -12,19 +12,19 @@ you must have mysql downloaded. You can download it from "https://dev.mysql.com/
 
 ### 3. Create tables
 
-run `node script/tables`. This will create all our tables.
+Run `npm run table`. This will create all our tables.
 
 ### 4. Populate data
 
-run `node script/populate`. This will populate our data.
+Run `npm run populate`. This will populate our data.
 
 If the above script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
 
 ### 5. Start up the server
 
-finally, run `node app.js` to start up the backend server. We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
+Finally, run `npm run start` to start up the backend server. We have one endpoint `/api/query` which is a post request that will execute a query from the body. (query can be SELECT, INSERT, UPDATE, DELETE, etc).
 
-e.g. POST to http://localhost:8081/api/query with header set to 
+e.g. POST request to http://localhost:8081/api/query with header set to 
 ```
 { 'Content-Type': 'application/json' }
 ```
