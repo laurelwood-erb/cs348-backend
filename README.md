@@ -4,7 +4,7 @@
 - You need followings installed in your device
   1. `npm` (Essentially `Node.js`)
   2. `MySQL`, which can be downloaded <a href="https://dev.mysql.com/downloads/mysql/">here</a>
-- You need to <u>**modify foloowing components in source code**</u>
+- You need to <u>**modify following components in source code**</u>
   - Under root directory for the backend, move to `./src/script` directory
   - Find `populate.js` and `tables.js` inside it
   - Find a variable declaration with following line
@@ -45,6 +45,7 @@
         | `DATABASE_USER=root`| make sure database user is set to root        |
         | `DATABASE_PASSWORD={your_password}`| remove the variable in the parantheses and put your own password        |
         | `DATABASE_NAME=cs348`| set the database name as cs348        |
+        | `PORT=8080`| set the sever port to 8080       |
     4. In the files `src/script/populate.js` and `src/script/tables.js` make sure to change the `DATABASE_PASSWORD` as your actual database password, same as you've done in your `.env` file.
     5. Start the backend server by executing this command
         ```
