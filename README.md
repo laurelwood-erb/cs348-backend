@@ -15,6 +15,9 @@
 
 <br>
 
+## Note
+Sample queries are contained in `src/sample_queries` which has `feature2.out` and `feature2.sql`
+
 ## Running Our Application
 <u>**Please follow these steps carefully**</u>
 
