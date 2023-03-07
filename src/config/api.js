@@ -2,6 +2,7 @@
 
 const bodyParser = require("body-parser");
 const express = require("express");
+const { getCountriesByAirline } = require("../components/getCountriesByAirline");
 const sql = require("../models/sql");
 
 // allows us to use .env variables
@@ -15,7 +16,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // set up router
-app.post("/api/query", sql.executeQuery);
+app.get("/api/airline-countries:airline", (req, res) => {
+  res.send(getCountriesByAirline(req.params.airline))
+});
+app.post("/api/query", sql.executeQuery)
 
 // create export
 const config = {

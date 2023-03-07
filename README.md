@@ -26,7 +26,7 @@
 - Use either `$ git clone` or simply download
 - For frontend instructions, click the link of the above frontend repo.
 
-2. Install necessary packages for *backend* and start its application
+2. Install necessary packages for **backend** and start its application
     1. In the backend repo, execute this command
         ```
         $ npm i
@@ -37,7 +37,16 @@
         $ npm run populate
         ```
         If the above `populate` script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
-    3. Start the backend server by executing this command
+    3. Create  your `.env` file with the following:
+
+        | Name      | Description |
+        | ----------- | ----------- |
+        | `DATABASE_HOST=localhost`      | database host       |
+        | `DATABASE_USER=root`| make sure database user is set to root        |
+        | `DATABASE_PASSWORD={your_password}`| remove the variable in the parantheses and put your own password        |
+        | `DATABASE_NAME=cs348`| set the database name as cs348        |
+    4. In the files `src/script/populate.js` and `src/script/tables.js` make sure to change the `DATABASE_PASSWORD` as your actual database password, same as you've done in your `.env` file.
+    5. Start the backend server by executing this command
         ```
         $ npm run start
         ```
