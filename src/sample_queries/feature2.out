@@ -1,0 +1,642 @@
+-------------------------------------------------------------------+--------------------+--------------------------+
+| id   | name                                                              | city               | country                  |
++------+-------------------------------------------------------------------+--------------------+--------------------------+
+|  302 | Brussels Airport                                                  | Brussels           | Belgium                  |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 2874 | V.C. Bird International Airport                                   | Antigua            | Antigua and Barbuda      |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 2895 | Queen Beatrix International Airport                               | Oranjestad         | Aruba                    |
+| 2179 | Abu Dhabi International Airport                                   | Abu Dhabi          | United Arab Emirates     |
+| 5810 | Samaná El Catey International Airport                             | Samana             | Dominican Republic       |
+| 1218 | Barcelona International Airport                                   | Barcelona          | Spain                    |
+| 4069 | L.F. Wade International International Airport                     | Bermuda            | Bermuda                  |
+| 3825 | Bradley International Airport                                     | Windsor Locks      | United States            |
+| 2875 | Sir Grantley Adams International Airport                          | Bridgetown         | Barbados                 |
+| 3690 | Nashville International Airport                                   | Nashville          | United States            |
+| 2709 | El Dorado International Airport                                   | Bogota             | Colombia                 |
+| 3448 | General Edward Lawrence Logan International Airport               | Boston             | United States            |
+| 3849 | Baltimore/Washington International Thurgood Marshall Airport      | Baltimore          | United States            |
+| 1901 | Jardines Del Rey Airport                                          | Cunagua            | Cuba                     |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3486 | Cleveland Hopkins International Airport                           | Cleveland          | United States            |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3759 | John Glenn Columbus International Airport                         | Columbus           | United States            |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3751 | Denver International Airport                                      | Denver             | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 3494 | Newark Liberty International Airport                              | Newark             | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+|  340 | Frankfurt am Main Airport                                         | Frankfurt          | Germany                  |
+| 1926 | Owen Roberts International Airport                                | Georgetown         | Cayman Islands           |
+| 1941 | Exuma International Airport                                       | Great Exuma        | Bahamas                  |
+| 2882 | Point Salines International Airport                               | Point Salines      | Grenada                  |
+| 2564 | Guarulhos - Governador André Franco Montoro International Airport | Sao Paulo          | Brazil                   |
+| 1909 | José Martí International Airport                                  | Havana             | Cuba                     |
+| 3077 | Hong Kong International Airport                                   | Hong Kong          | Hong Kong                |
+| 1910 | Frank Pais International Airport                                  | Holguin            | Cuba                     |
+| 3714 | Washington Dulles International Airport                           | Washington         | United States            |
+| 3550 | George Bush Intercontinental Houston Airport                      | Houston            | United States            |
+| 3585 | Indianapolis International Airport                                | Indianapolis       | United States            |
+| 1701 | Atatürk International Airport                                     | Istanbul           | Turkey                   |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2789 | Jorge Chávez International Airport                                | Lima               | Peru                     |
+| 1881 | Daniel Oduber Quiros International Airport                        | Liberia            | Costa Rica               |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3458 | Kansas City International Airport                                 | Kansas City        | United States            |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3542 | Harrisburg International Airport                                  | Harrisburg         | United States            |
+| 1824 | Licenciado Benito Juarez International Airport                    | Mexico City        | Mexico                   |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3717 | General Mitchell International Airport                            | Milwaukee          | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3861 | Louis Armstrong New Orleans International Airport                 | New Orleans        | United States            |
+|  346 | Munich Airport                                                    | Munich             | Germany                  |
+| 1953 | Lynden Pindling International Airport                             | Nassau             | Bahamas                  |
+| 2279 | Narita International Airport                                      | Tokyo              | Japan                    |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 3462 | Phoenix Sky Harbor International Airport                          | Phoenix            | United States            |
+| 3570 | Pittsburgh International Airport                                  | Pittsburgh         | United States            |
+| 1754 | Providenciales Airport                                            | Providenciales     | Turks and Caicos Islands |
+| 1761 | Gregorio Luperon International Airport                            | Puerto Plata       | Dominican Republic       |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 3406 | Shanghai Pudong International Airport                             | Shanghai           | China                    |
+| 3626 | Raleigh Durham International Airport                              | Raleigh-durham     | United States            |
+| 3622 | Greater Rochester International Airport                           | Rochester          | United States            |
+| 3793 | Southwest Florida International Airport                           | Fort Myers         | United States            |
+| 3731 | San Diego International Airport                                   | San Diego          | United States            |
+| 2650 | Comodoro Arturo Merino Benítez International Airport              | Santiago           | Chile                    |
+| 3577 | Seattle Tacoma International Airport                              | Seattle            | United States            |
+| 3469 | San Francisco International Airport                               | San Francisco      | United States            |
+| 1885 | Juan Santamaria International Airport                             | San Jose           | Costa Rica               |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 3678 | St Louis Lambert International Airport                            | St. Louis          | United States            |
+| 3745 | Syracuse Hancock International Airport                            | Syracuse           | United States            |
+| 1590 | Ben Gurion International Airport                                  | Tel-aviv           | Israel                   |
+| 3646 | Tampa International Airport                                       | Tampa              | United States            |
+| 2894 | Hewanorra International Airport                                   | Hewandorra         | Saint Lucia              |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|  679 | Warsaw Chopin Airport                                             | Warsaw             | Poland                   |
+|   21 | Sault Ste Marie Airport                                           | Sault Sainte Marie | Canada                   |
+|   45 | Deer Lake Airport                                                 | Deer Lake          | Canada                   |
+|   49 | Edmonton International Airport                                    | Edmonton           | Canada                   |
+|   56 | Fredericton Airport                                               | Fredericton        | Canada                   |
+|   61 | Kingston Norman Rogers Airport                                    | Kingston           | Canada                   |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|   90 | Fort McMurray Airport                                             | Fort Mcmurray      | Canada                   |
+|  100 | Ottawa Macdonald-Cartier International Airport                    | Ottawa             | Canada                   |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  113 | Windsor Airport                                                   | Windsor            | Canada                   |
+|  117 | Greater Moncton International Airport                             | Moncton            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  121 | Thunder Bay Airport                                               | Thunder Bay        | Canada                   |
+|  126 | Sydney / J.A. Douglas McCurdy Airport                             | Sydney             | Canada                   |
+|  133 | Sudbury Airport                                                   | Sudbury            | Canada                   |
+|  135 | Saint John Airport                                                | St. John           | Canada                   |
+|  143 | Timmins/Victor M. Power                                           | Timmins            | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+|  166 | Saskatoon John G. Diefenbaker International Airport               | Saskatoon          | Canada                   |
+|  174 | London Airport                                                    | London             | Canada                   |
+|  177 | North Bay Jack Garland Airport                                    | North Bay          | Canada                   |
+|  178 | Calgary International Airport                                     | Calgary            | Canada                   |
+|  182 | Charlottetown Airport                                             | Charlottetown      | Canada                   |
+|  184 | Victoria International Airport                                    | Victoria           | Canada                   |
+|  189 | St. John's International Airport                                  | St. John's         | Canada                   |
+|  199 | Chris Hadfield Airport                                            | Sarnia             | Canada                   |
+| 1678 | Zürich Airport                                                    | Zurich             | Switzerland              |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 2709 | El Dorado International Airport                                   | Bogota             | Colombia                 |
+| 1824 | Licenciado Benito Juarez International Airport                    | Mexico City        | Mexico                   |
+| 1892 | Monseñor Óscar Arnulfo Romero International Airport               | San Salvador       | El Salvador              |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2276 | Taiwan Taoyuan International Airport                              | Taipei             | Taiwan                   |
+| 4304 | Cheddi Jagan International Airport                                | Georgetown         | Guyana                   |
+| 2882 | Point Salines International Airport                               | Point Salines      | Grenada                  |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 2902 | Piarco International Airport                                      | Port-of-spain      | Trinidad and Tobago      |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+| 3406 | Shanghai Pudong International Airport                             | Shanghai           | China                    |
+| 1871 | Tocumen International Airport                                     | Panama City        | Panama                   |
+| 1904 | Ignacio Agramonte International Airport                           | Camaguey           | Cuba                     |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 3077 | Hong Kong International Airport                                   | Hong Kong          | Hong Kong                |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 2188 | Dubai International Airport                                       | Dubai              | United Arab Emirates     |
+| 1107 | Addis Ababa Bole International Airport                            | Addis Ababa        | Ethiopia                 |
+| 2179 | Abu Dhabi International Airport                                   | Abu Dhabi          | United Arab Emirates     |
+|  302 | Brussels Airport                                                  | Brussels           | Belgium                  |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+|   16 | Keflavik International Airport                                    | Keflavik           | Iceland                  |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2564 | Guarulhos - Governador André Franco Montoro International Airport | Sao Paulo          | Brazil                   |
+| 3930 | Incheon International Airport                                     | Seoul              | South Korea              |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+|  340 | Frankfurt am Main Airport                                         | Frankfurt          | Germany                  |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+|  346 | Munich Airport                                                    | Munich             | Germany                  |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  679 | Warsaw Chopin Airport                                             | Warsaw             | Poland                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 1678 | Zürich Airport                                                    | Zurich             | Switzerland              |
+| 1590 | Ben Gurion International Airport                                  | Tel-aviv           | Israel                   |
+| 1128 | Cairo International Airport                                       | Cairo              | Egypt                    |
+| 2279 | Narita International Airport                                      | Tokyo              | Japan                    |
+| 4304 | Cheddi Jagan International Airport                                | Georgetown         | Guyana                   |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+| 2223 | Benazir Bhutto International Airport                              | Islamabad          | Pakistan                 |
+| 2206 | Jinnah International Airport                                      | Karachi            | Pakistan                 |
+| 2207 | Alama Iqbal International Airport                                 | Lahore             | Pakistan                 |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1633 | João Paulo II Airport                                             | Ponta Delgada      | Portugal                 |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 2985 | Sheremetyevo International Airport                                | Moscow             | Russia                   |
+| 2072 | King Abdulaziz International Airport                              | Jeddah             | Saudi Arabia             |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1701 | Atatürk International Airport                                     | Istanbul           | Turkey                   |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1633 | João Paulo II Airport                                             | Ponta Delgada      | Portugal                 |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+| 3941 | Eleftherios Venizelos International Airport                       | Athens             | Greece                   |
+| 1218 | Barcelona International Airport                                   | Barcelona          | Spain                    |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+|  534 | Glasgow International Airport                                     | Glasgow            | United Kingdom           |
+| 1910 | Frank Pais International Airport                                  | Holguin            | Cuba                     |
+|  502 | London Gatwick Airport                                            | London             | United Kingdom           |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+|  478 | Manchester Airport                                                | Manchester         | United Kingdom           |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 1551 | Venice Marco Polo Airport                                         | Venice             | Italy                    |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 3825 | Bradley International Airport                                     | Windsor Locks      | United States            |
+| 3448 | General Edward Lawrence Logan International Airport               | Boston             | United States            |
+| 3486 | Cleveland Hopkins International Airport                           | Cleveland          | United States            |
+| 3759 | John Glenn Columbus International Airport                         | Columbus           | United States            |
+| 3751 | Denver International Airport                                      | Denver             | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 3494 | Newark Liberty International Airport                              | Newark             | United States            |
+| 3714 | Washington Dulles International Airport                           | Washington         | United States            |
+| 3550 | George Bush Intercontinental Houston Airport                      | Houston            | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3861 | Louis Armstrong New Orleans International Airport                 | New Orleans        | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 3570 | Pittsburgh International Airport                                  | Pittsburgh         | United States            |
+| 3469 | San Francisco International Airport                               | San Francisco      | United States            |
+| 3678 | St Louis Lambert International Airport                            | St. Louis          | United States            |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 2988 | Vnukovo International Airport                                     | Moscow             | Russia                   |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 2874 | V.C. Bird International Airport                                   | Antigua            | Antigua and Barbuda      |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 2895 | Queen Beatrix International Airport                               | Oranjestad         | Aruba                    |
+| 5810 | Samaná El Catey International Airport                             | Samana             | Dominican Republic       |
+| 4069 | L.F. Wade International International Airport                     | Bermuda            | Bermuda                  |
+| 2875 | Sir Grantley Adams International Airport                          | Bridgetown         | Barbados                 |
+| 1901 | Jardines Del Rey Airport                                          | Cunagua            | Cuba                     |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+| 1926 | Owen Roberts International Airport                                | Georgetown         | Cayman Islands           |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 1881 | Daniel Oduber Quiros International Airport                        | Liberia            | Costa Rica               |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3515 | Myrtle Beach International Airport                                | Myrtle Beach       | United States            |
+| 1953 | Lynden Pindling International Airport                             | Nassau             | Bahamas                  |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 1754 | Providenciales Airport                                            | Providenciales     | Turks and Caicos Islands |
+| 1761 | Gregorio Luperon International Airport                            | Puerto Plata       | Dominican Republic       |
+| 2902 | Piarco International Airport                                      | Port-of-spain      | Trinidad and Tobago      |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 3793 | Southwest Florida International Airport                           | Fort Myers         | United States            |
+| 2890 | Luis Munoz Marin International Airport                            | San Juan           | Puerto Rico              |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 2899 | Princess Juliana International Airport                            | Philipsburg        | Netherlands Antilles     |
+| 3646 | Tampa International Airport                                       | Tampa              | United States            |
+| 2894 | Hewanorra International Airport                                   | Hewandorra         | Saint Lucia              |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|   45 | Deer Lake Airport                                                 | Deer Lake          | Canada                   |
+|   49 | Edmonton International Airport                                    | Edmonton           | Canada                   |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|   87 | Kelowna International Airport                                     | Kelowna            | Canada                   |
+|   90 | Fort McMurray Airport                                             | Fort Mcmurray      | Canada                   |
+|  100 | Ottawa Macdonald-Cartier International Airport                    | Ottawa             | Canada                   |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  117 | Greater Moncton International Airport                             | Moncton            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  121 | Thunder Bay Airport                                               | Thunder Bay        | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+|  166 | Saskatoon John G. Diefenbaker International Airport               | Saskatoon          | Canada                   |
+|  178 | Calgary International Airport                                     | Calgary            | Canada                   |
+|  182 | Charlottetown Airport                                             | Charlottetown      | Canada                   |
+|  184 | Victoria International Airport                                    | Victoria           | Canada                   |
+|  189 | St. John's International Airport                                  | St. John's         | Canada                   |
+|  302 | Brussels Airport                                                  | Brussels           | Belgium                  |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 2874 | V.C. Bird International Airport                                   | Antigua            | Antigua and Barbuda      |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 2895 | Queen Beatrix International Airport                               | Oranjestad         | Aruba                    |
+| 2179 | Abu Dhabi International Airport                                   | Abu Dhabi          | United Arab Emirates     |
+| 5810 | Samaná El Catey International Airport                             | Samana             | Dominican Republic       |
+| 1218 | Barcelona International Airport                                   | Barcelona          | Spain                    |
+| 4069 | L.F. Wade International International Airport                     | Bermuda            | Bermuda                  |
+| 3825 | Bradley International Airport                                     | Windsor Locks      | United States            |
+| 2875 | Sir Grantley Adams International Airport                          | Bridgetown         | Barbados                 |
+| 3690 | Nashville International Airport                                   | Nashville          | United States            |
+| 2709 | El Dorado International Airport                                   | Bogota             | Colombia                 |
+| 3448 | General Edward Lawrence Logan International Airport               | Boston             | United States            |
+| 3849 | Baltimore/Washington International Thurgood Marshall Airport      | Baltimore          | United States            |
+| 1901 | Jardines Del Rey Airport                                          | Cunagua            | Cuba                     |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3486 | Cleveland Hopkins International Airport                           | Cleveland          | United States            |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3759 | John Glenn Columbus International Airport                         | Columbus           | United States            |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3751 | Denver International Airport                                      | Denver             | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 3494 | Newark Liberty International Airport                              | Newark             | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+|  340 | Frankfurt am Main Airport                                         | Frankfurt          | Germany                  |
+| 1926 | Owen Roberts International Airport                                | Georgetown         | Cayman Islands           |
+| 1941 | Exuma International Airport                                       | Great Exuma        | Bahamas                  |
+| 2882 | Point Salines International Airport                               | Point Salines      | Grenada                  |
+| 2564 | Guarulhos - Governador André Franco Montoro International Airport | Sao Paulo          | Brazil                   |
+| 1909 | José Martí International Airport                                  | Havana             | Cuba                     |
+| 3077 | Hong Kong International Airport                                   | Hong Kong          | Hong Kong                |
+| 1910 | Frank Pais International Airport                                  | Holguin            | Cuba                     |
+| 3714 | Washington Dulles International Airport                           | Washington         | United States            |
+| 3550 | George Bush Intercontinental Houston Airport                      | Houston            | United States            |
+| 3585 | Indianapolis International Airport                                | Indianapolis       | United States            |
+| 1701 | Atatürk International Airport                                     | Istanbul           | Turkey                   |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2789 | Jorge Chávez International Airport                                | Lima               | Peru                     |
+| 1881 | Daniel Oduber Quiros International Airport                        | Liberia            | Costa Rica               |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3458 | Kansas City International Airport                                 | Kansas City        | United States            |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3542 | Harrisburg International Airport                                  | Harrisburg         | United States            |
+| 1824 | Licenciado Benito Juarez International Airport                    | Mexico City        | Mexico                   |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3717 | General Mitchell International Airport                            | Milwaukee          | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3861 | Louis Armstrong New Orleans International Airport                 | New Orleans        | United States            |
+|  346 | Munich Airport                                                    | Munich             | Germany                  |
+| 1953 | Lynden Pindling International Airport                             | Nassau             | Bahamas                  |
+| 2279 | Narita International Airport                                      | Tokyo              | Japan                    |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 3462 | Phoenix Sky Harbor International Airport                          | Phoenix            | United States            |
+| 3570 | Pittsburgh International Airport                                  | Pittsburgh         | United States            |
+| 1754 | Providenciales Airport                                            | Providenciales     | Turks and Caicos Islands |
+| 1761 | Gregorio Luperon International Airport                            | Puerto Plata       | Dominican Republic       |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 3406 | Shanghai Pudong International Airport                             | Shanghai           | China                    |
+| 3626 | Raleigh Durham International Airport                              | Raleigh-durham     | United States            |
+| 3622 | Greater Rochester International Airport                           | Rochester          | United States            |
+| 3793 | Southwest Florida International Airport                           | Fort Myers         | United States            |
+| 3731 | San Diego International Airport                                   | San Diego          | United States            |
+| 2650 | Comodoro Arturo Merino Benítez International Airport              | Santiago           | Chile                    |
+| 3577 | Seattle Tacoma International Airport                              | Seattle            | United States            |
+| 3469 | San Francisco International Airport                               | San Francisco      | United States            |
+| 1885 | Juan Santamaria International Airport                             | San Jose           | Costa Rica               |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 3678 | St Louis Lambert International Airport                            | St. Louis          | United States            |
+| 3745 | Syracuse Hancock International Airport                            | Syracuse           | United States            |
+| 1590 | Ben Gurion International Airport                                  | Tel-aviv           | Israel                   |
+| 3646 | Tampa International Airport                                       | Tampa              | United States            |
+| 2894 | Hewanorra International Airport                                   | Hewandorra         | Saint Lucia              |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|  679 | Warsaw Chopin Airport                                             | Warsaw             | Poland                   |
+|   21 | Sault Ste Marie Airport                                           | Sault Sainte Marie | Canada                   |
+|   45 | Deer Lake Airport                                                 | Deer Lake          | Canada                   |
+|   49 | Edmonton International Airport                                    | Edmonton           | Canada                   |
+|   56 | Fredericton Airport                                               | Fredericton        | Canada                   |
+|   61 | Kingston Norman Rogers Airport                                    | Kingston           | Canada                   |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|   90 | Fort McMurray Airport                                             | Fort Mcmurray      | Canada                   |
+|  100 | Ottawa Macdonald-Cartier International Airport                    | Ottawa             | Canada                   |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  113 | Windsor Airport                                                   | Windsor            | Canada                   |
+|  117 | Greater Moncton International Airport                             | Moncton            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  121 | Thunder Bay Airport                                               | Thunder Bay        | Canada                   |
+|  126 | Sydney / J.A. Douglas McCurdy Airport                             | Sydney             | Canada                   |
+|  133 | Sudbury Airport                                                   | Sudbury            | Canada                   |
+|  135 | Saint John Airport                                                | St. John           | Canada                   |
+|  143 | Timmins/Victor M. Power                                           | Timmins            | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+|  166 | Saskatoon John G. Diefenbaker International Airport               | Saskatoon          | Canada                   |
+|  174 | London Airport                                                    | London             | Canada                   |
+|  177 | North Bay Jack Garland Airport                                    | North Bay          | Canada                   |
+|  178 | Calgary International Airport                                     | Calgary            | Canada                   |
+|  182 | Charlottetown Airport                                             | Charlottetown      | Canada                   |
+|  184 | Victoria International Airport                                    | Victoria           | Canada                   |
+|  189 | St. John's International Airport                                  | St. John's         | Canada                   |
+|  199 | Chris Hadfield Airport                                            | Sarnia             | Canada                   |
+| 1678 | Zürich Airport                                                    | Zurich             | Switzerland              |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 2709 | El Dorado International Airport                                   | Bogota             | Colombia                 |
+| 1824 | Licenciado Benito Juarez International Airport                    | Mexico City        | Mexico                   |
+| 1892 | Monseñor Óscar Arnulfo Romero International Airport               | San Salvador       | El Salvador              |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2276 | Taiwan Taoyuan International Airport                              | Taipei             | Taiwan                   |
+| 4304 | Cheddi Jagan International Airport                                | Georgetown         | Guyana                   |
+| 2882 | Point Salines International Airport                               | Point Salines      | Grenada                  |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 2902 | Piarco International Airport                                      | Port-of-spain      | Trinidad and Tobago      |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+| 3406 | Shanghai Pudong International Airport                             | Shanghai           | China                    |
+| 1871 | Tocumen International Airport                                     | Panama City        | Panama                   |
+| 1904 | Ignacio Agramonte International Airport                           | Camaguey           | Cuba                     |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 3077 | Hong Kong International Airport                                   | Hong Kong          | Hong Kong                |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 2188 | Dubai International Airport                                       | Dubai              | United Arab Emirates     |
+| 1107 | Addis Ababa Bole International Airport                            | Addis Ababa        | Ethiopia                 |
+| 2179 | Abu Dhabi International Airport                                   | Abu Dhabi          | United Arab Emirates     |
+|  302 | Brussels Airport                                                  | Brussels           | Belgium                  |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+|   16 | Keflavik International Airport                                    | Keflavik           | Iceland                  |
+| 3364 | Beijing Capital International Airport                             | Beijing            | China                    |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+| 2564 | Guarulhos - Governador André Franco Montoro International Airport | Sao Paulo          | Brazil                   |
+| 3930 | Incheon International Airport                                     | Seoul              | South Korea              |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+|  340 | Frankfurt am Main Airport                                         | Frankfurt          | Germany                  |
+|  507 | London Heathrow Airport                                           | London             | United Kingdom           |
+|  346 | Munich Airport                                                    | Munich             | Germany                  |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  679 | Warsaw Chopin Airport                                             | Warsaw             | Poland                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 1678 | Zürich Airport                                                    | Zurich             | Switzerland              |
+| 1590 | Ben Gurion International Airport                                  | Tel-aviv           | Israel                   |
+| 1128 | Cairo International Airport                                       | Cairo              | Egypt                    |
+| 2279 | Narita International Airport                                      | Tokyo              | Japan                    |
+| 4304 | Cheddi Jagan International Airport                                | Georgetown         | Guyana                   |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 1613 | Vienna International Airport                                      | Vienna             | Austria                  |
+| 2223 | Benazir Bhutto International Airport                              | Islamabad          | Pakistan                 |
+| 2206 | Jinnah International Airport                                      | Karachi            | Pakistan                 |
+| 2207 | Alama Iqbal International Airport                                 | Lahore             | Pakistan                 |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1633 | João Paulo II Airport                                             | Ponta Delgada      | Portugal                 |
+|  609 | Copenhagen Kastrup Airport                                        | Copenhagen         | Denmark                  |
+| 2985 | Sheremetyevo International Airport                                | Moscow             | Russia                   |
+| 2072 | King Abdulaziz International Airport                              | Jeddah             | Saudi Arabia             |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 1701 | Atatürk International Airport                                     | Istanbul           | Turkey                   |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1633 | João Paulo II Airport                                             | Ponta Delgada      | Portugal                 |
+|  580 | Amsterdam Airport Schiphol                                        | Amsterdam          | Netherlands              |
+| 3941 | Eleftherios Venizelos International Airport                       | Athens             | Greece                   |
+| 1218 | Barcelona International Airport                                   | Barcelona          | Spain                    |
+| 1382 | Charles de Gaulle International Airport                           | Paris              | France                   |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+|  599 | Dublin Airport                                                    | Dublin             | Ireland                  |
+| 1555 | Leonardo da Vinci–Fiumicino Airport                               | Rome               | Italy                    |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+|  534 | Glasgow International Airport                                     | Glasgow            | United Kingdom           |
+| 1910 | Frank Pais International Airport                                  | Holguin            | Cuba                     |
+|  502 | London Gatwick Airport                                            | London             | United Kingdom           |
+| 1638 | Humberto Delgado Airport (Lisbon Portela Airport)                 | Lisbon             | Portugal                 |
+|  478 | Manchester Airport                                                | Manchester         | United Kingdom           |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 1636 | Francisco de Sá Carneiro Airport                                  | Porto              | Portugal                 |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 1551 | Venice Marco Polo Airport                                         | Venice             | Italy                    |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 3825 | Bradley International Airport                                     | Windsor Locks      | United States            |
+| 3448 | General Edward Lawrence Logan International Airport               | Boston             | United States            |
+| 3486 | Cleveland Hopkins International Airport                           | Cleveland          | United States            |
+| 3759 | John Glenn Columbus International Airport                         | Columbus           | United States            |
+| 3751 | Denver International Airport                                      | Denver             | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 3494 | Newark Liberty International Airport                              | Newark             | United States            |
+| 3714 | Washington Dulles International Airport                           | Washington         | United States            |
+| 3550 | George Bush Intercontinental Houston Airport                      | Houston            | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3861 | Louis Armstrong New Orleans International Airport                 | New Orleans        | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 3570 | Pittsburgh International Airport                                  | Pittsburgh         | United States            |
+| 3469 | San Francisco International Airport                               | San Francisco      | United States            |
+| 3678 | St Louis Lambert International Airport                            | St. Louis          | United States            |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+| 2988 | Vnukovo International Airport                                     | Moscow             | Russia                   |
+| 3876 | Charlotte Douglas International Airport                           | Charlotte          | United States            |
+| 3520 | Ronald Reagan Washington National Airport                         | Washington         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 3752 | Philadelphia International Airport                                | Philadelphia       | United States            |
+| 2874 | V.C. Bird International Airport                                   | Antigua            | Antigua and Barbuda      |
+| 3682 | Hartsfield Jackson Atlanta International Airport                  | Atlanta            | United States            |
+| 2895 | Queen Beatrix International Airport                               | Oranjestad         | Aruba                    |
+| 5810 | Samaná El Catey International Airport                             | Samana             | Dominican Republic       |
+| 4069 | L.F. Wade International International Airport                     | Bermuda            | Bermuda                  |
+| 2875 | Sir Grantley Adams International Airport                          | Bridgetown         | Barbados                 |
+| 1901 | Jardines Del Rey Airport                                          | Cunagua            | Cuba                     |
+| 1852 | Cancún International Airport                                      | Cancun             | Mexico                   |
+| 3488 | Cincinnati Northern Kentucky International Airport                | Cincinnati         | United States            |
+| 3670 | Dallas Fort Worth International Airport                           | Dallas-Fort Worth  | United States            |
+| 3645 | Detroit Metropolitan Wayne County Airport                         | Detroit            | United States            |
+| 3533 | Fort Lauderdale Hollywood International Airport                   | Fort Lauderdale    | United States            |
+| 1926 | Owen Roberts International Airport                                | Georgetown         | Cayman Islands           |
+| 3797 | John F Kennedy International Airport                              | New York           | United States            |
+| 1779 | Norman Manley International Airport                               | Kingston           | Jamaica                  |
+| 3877 | McCarran International Airport                                    | Las Vegas          | United States            |
+| 3484 | Los Angeles International Airport                                 | Los Angeles        | United States            |
+| 3697 | La Guardia Airport                                                | New York           | United States            |
+| 1881 | Daniel Oduber Quiros International Airport                        | Liberia            | Costa Rica               |
+| 1780 | Sangster International Airport                                    | Montego Bay        | Jamaica                  |
+| 3878 | Orlando International Airport                                     | Orlando            | United States            |
+| 3576 | Miami International Airport                                       | Miami              | United States            |
+| 3858 | Minneapolis-St Paul International/Wold-Chamberlain Airport        | Minneapolis        | United States            |
+| 3515 | Myrtle Beach International Airport                                | Myrtle Beach       | United States            |
+| 1953 | Lynden Pindling International Airport                             | Nassau             | Bahamas                  |
+| 3830 | Chicago O'Hare International Airport                              | Chicago            | United States            |
+| 1754 | Providenciales Airport                                            | Providenciales     | Turks and Caicos Islands |
+| 1761 | Gregorio Luperon International Airport                            | Puerto Plata       | Dominican Republic       |
+| 2902 | Piarco International Airport                                      | Port-of-spain      | Trinidad and Tobago      |
+| 1760 | Punta Cana International Airport                                  | Punta Cana         | Dominican Republic       |
+| 3793 | Southwest Florida International Airport                           | Fort Myers         | United States            |
+| 2890 | Luis Munoz Marin International Airport                            | San Juan           | Puerto Rico              |
+| 1918 | Abel Santamaria Airport                                           | Santa Clara        | Cuba                     |
+| 2899 | Princess Juliana International Airport                            | Philipsburg        | Netherlands Antilles     |
+| 3646 | Tampa International Airport                                       | Tampa              | United States            |
+| 2894 | Hewanorra International Airport                                   | Hewandorra         | Saint Lucia              |
+| 1923 | Juan Gualberto Gomez International Airport                        | Varadero           | Cuba                     |
+|   45 | Deer Lake Airport                                                 | Deer Lake          | Canada                   |
+|   49 | Edmonton International Airport                                    | Edmonton           | Canada                   |
+|   73 | Halifax / Stanfield International Airport                         | Halifax            | Canada                   |
+|   87 | Kelowna International Airport                                     | Kelowna            | Canada                   |
+|   90 | Fort McMurray Airport                                             | Fort Mcmurray      | Canada                   |
+|  100 | Ottawa Macdonald-Cartier International Airport                    | Ottawa             | Canada                   |
+|  111 | Quebec Jean Lesage International Airport                          | Quebec             | Canada                   |
+|  117 | Greater Moncton International Airport                             | Moncton            | Canada                   |
+|  120 | Regina International Airport                                      | Regina             | Canada                   |
+|  121 | Thunder Bay Airport                                               | Thunder Bay        | Canada                   |
+|  146 | Montreal / Pierre Elliott Trudeau International Airport           | Montreal           | Canada                   |
+|  156 | Vancouver International Airport                                   | Vancouver          | Canada                   |
+|  160 | Winnipeg / James Armstrong Richardson International Airport       | Winnipeg           | Canada                   |
+|  166 | Saskatoon John G. Diefenbaker International Airport               | Saskatoon          | Canada                   |
+|  178 | Calgary International Airport                                     | Calgary            | Canada                   |
+|  182 | Charlottetown Airport                                             | Charlottetown      | Canada                   |
+|  184 | Victoria International Airport                                    | Victoria           | Canada                   |
+|  189 | St. John's International Airport                                  | St. John's         | Canada                   |
++------+-------------------------------------------------------------------+--------------------+--------------------------+
