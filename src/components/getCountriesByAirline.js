@@ -15,26 +15,28 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-exports.getCountriesByAirline = (airline) => {
-    const query = `WITH 
-    airline_id AS 
-    (SELECT id FROM Airline WHERE Name = ?), 
-    
-    source_ids AS 
-    (SELECT Source_airport_ID as id FROM Route WHERE route.Airline_ID = airline_id), 
-    
-    destination_ids AS 
-    (SELECT Destination_airport_ID as id FROM Route WHERE route.Airline_ID = airline_id) 
-    
-    select distinct count(*)  
-    from ((select * from source_ids) UNION (select * from destination_ids)) as ids join Airport on ids.id = Airport.id    
-    `
-    let countries = "";
-    connection.query(query, [airline], function(err, results) {
-        if (err) throw err;
-        console.log("Query for: " + airline);
-        console.log(results);
-        countries = results;
-    })
-    return countries;
+const query = `WITH 
+airline_id AS 
+(SELECT id FROM Airline WHERE Name = ?), 
+
+source_ids AS 
+(SELECT Source_airport_ID as id FROM Route WHERE route.Airline_ID = airline_id), 
+
+destination_ids AS 
+(SELECT Destination_airport_ID as id FROM Route WHERE route.Airline_ID = airline_id) 
+
+select distinct count(*)  
+from ((select * from source_ids) UNION (select * from destination_ids)) as ids join Airport on ids.id = Airport.id    
+`
+
+exports.executeQuery = async (req, res) => {
+    try{
+        connection.query(query, [req.params.airline], function (err, results) {
+            if (err) throw err;
+            // console.log(results[0]['count(*)'])
+            return res.json(results[0]['count(*)']);
+        });
+    } catch(err){
+        return res.status(500).send();
+    }
 }
