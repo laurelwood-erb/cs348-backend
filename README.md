@@ -4,6 +4,14 @@
 - You need followings installed in your device
   1. `npm` (Essentially `Node.js`)
   2. `MySQL`, which can be downloaded <a href="https://dev.mysql.com/downloads/mysql/">here</a>
+- You need to <u>**modify following components in source code**</u>
+  - Under root directory for the backend, move to `./src/script` directory
+  - Find `populate.js` and `tables.js` inside it
+  - Find a variable declaration with following line
+    ```JS
+    const DATABASE_PASSWORD = "123456789";
+    ```
+  - Change RHS of declaration with your own password to `MySQL`
 
 <br>
 
@@ -11,14 +19,14 @@
 <u>**Please follow these steps carefully**</u>
 
 1. Clone our two repositories:
+- Frontend: https://github.com/laurelwood-erb/cs348-frontend
+- Backend:  https://github.com/laurelwood-erb/cs348-backend
 <br>
-Frontend - https://github.com/laurelwood-erb/cs348-frontend
-Backend -  https://github.com/laurelwood-erb/cs348-backend
-<br>
-using either `$ git clone` or simply download
-For frontend instructions, click the link of the above frontend repo.
 
-2. Install necessary packages for *backend* and start its application
+- Use either `$ git clone` or simply download
+- For frontend instructions, click the link of the above frontend repo.
+
+2. Install necessary packages for **backend** and start its application
     1. In the backend repo, execute this command
         ```
         $ npm i
@@ -29,7 +37,17 @@ For frontend instructions, click the link of the above frontend repo.
         $ npm run populate
         ```
         If the above `populate` script results in `ER_DUP_ENTRY` with `result undefined`, make sure to clear the database and recreate the tables and populate data.
-    3. Start the backend server by executing this command
+    3. Create  your `.env` file with the following:
+
+        | Name      | Description |
+        | ----------- | ----------- |
+        | `DATABASE_HOST=localhost`      | database host       |
+        | `DATABASE_USER=root`| make sure database user is set to root        |
+        | `DATABASE_PASSWORD={your_password}`| remove the variable in the parantheses and put your own password        |
+        | `DATABASE_NAME=cs348`| set the database name as cs348        |
+        | `PORT=8080`| set the sever port to 8080       |
+    4. In the files `src/script/populate.js` and `src/script/tables.js` make sure to change the `DATABASE_PASSWORD` as your actual database password, same as you've done in your `.env` file.
+    5. Start the backend server by executing this command
         ```
         $ npm run start
         ```
@@ -43,6 +61,7 @@ For frontend instructions, click the link of the above frontend repo.
         ```
         { 'query': 'SELECT \* FROM airplane LIMIT 10' }
         ```
+3. As mentioned, run our front-end application, which its instruction to run the application can be found <a href="https://github.com/laurelwood-erb/cs348-frontend">here</a>
 
 <br>
 
