@@ -73,7 +73,7 @@ const tables = [
   `CREATE TABLE IF NOT EXISTS Flight
           (id int NOT NULL AUTO_INCREMENT,
           flight_status varchar(9),
-          flight_Date varchar(10),
+          flight_date varchar(10),
           route_id int,
           airplane_IATA varchar(4),
           primary key (id),

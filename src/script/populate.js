@@ -51,7 +51,7 @@ const data = [
     name: "flight",
     path: path.join(__dirname, "../../data/flights.csv"),
     query:
-      "INSERT INTO Flight (flight_status, flight_date, route, airplane) VALUES ?",
+      "INSERT INTO Flight (flight_status, flight_date, route_id, airplane_IATA) VALUES ?",
     indices: [0, 1, 2, 3],
   },
 ];
