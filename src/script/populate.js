@@ -47,13 +47,13 @@ const data = [
       "INSERT INTO Route (airline_id, source_airport_id, destination_airport_id, codeshare, equipment) VALUES ?",
     indices: [1, 3, 5, 6, 8],
   },
-  {
-    name: "flight",
-    path: path.join(__dirname, "../../data/flights.csv"),
-    query:
-      "INSERT INTO Flight (flight_status, flight_date, route_id, airplane_IATA) VALUES ?",
-    indices: [0, 1, 2, 3],
-  },
+  // {
+  //   name: "flight",
+  //   path: path.join(__dirname, "../../data/flights.csv"),
+  //   query:
+  //     "INSERT INTO Flight (flight_status, flight_date, route_id, airplane_IATA) VALUES ?",
+  //   indices: [0, 1, 2, 3],
+  // },
 ];
 
 connection.connect();
