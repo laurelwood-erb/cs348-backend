@@ -1,5 +1,3 @@
-/** @format */
-
 const connection = require("../config/connection");
 
 exports.executeQuery = async (req, res) => {

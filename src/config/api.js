@@ -18,12 +18,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // set up router
-app.get("/api/first/:paramVar", queryFunction.queryParamOne(0));
-app.get("/api/second/:paramVar", queryFunction.queryParamOne(1));
-app.get("/api/third/:paramVar", queryFunction.queryParamOne(2));
-app.get("/api/fourth/:paramVar", queryFunction.queryParamOne(3));
-app.get("/api/fifth/:paramVar1/:paramVar2", queryFunction.queryParamTwo(4));
-app.get("/api/sixth/:paramVar1/:paramVar2", queryFunction.queryParamTwo(5));
+app.get("/api/first/:paramVar", queryFunction.queryParam(0));
+app.get("/api/second/:paramVar", queryFunction.queryParam(1));
+app.get("/api/third/:paramVar", queryFunction.queryParam(2));
+app.get("/api/fourth/:paramVar1/:paramVar2", queryFunction.queryParam(3));
+// app.get("/api/fifth/:paramVar1/:paramVar2", queryFunction.queryParam(4));
+// app.get("/api/sixth/:paramVar1/:paramVar2", queryFunction.queryParam(5));
 
 app.post("/api/query", sql.executeQuery);
 
