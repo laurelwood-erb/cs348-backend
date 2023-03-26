@@ -30,30 +30,30 @@ const data = [
   {
     name: "airplane",
     path: path.join(__dirname, "../../data/airplanes.csv"),
-    query: "INSERT INTO Airplane (name, IATA, ICAO) VALUES ?",
-    indices: [0, 1, 2],
+    query: "INSERT INTO Airplane (id, name, IATA, ICAO) VALUES ?",
+    indices: [0, 1, 2, 3],
   },
   {
     name: "airport",
     path: path.join(__dirname, "../../data/airports.csv"),
     query:
-      "INSERT INTO Airport (id, name, city, country, IATA, ICAO, latitude, longitude, altitude, timezone, DST) VALUES ?",
-    indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "INSERT INTO Airport (id, name, city, country, IATA, ICAO, latitude, longitude, altitude, timezone) VALUES ?",
+    indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
   },
   {
     name: "route",
     path: path.join(__dirname, "../../data/routes.csv"),
     query:
       "INSERT INTO Route (airline_id, source_airport_id, destination_airport_id, codeshare, equipment) VALUES ?",
-    indices: [1, 3, 5, 6, 8],
+    indices: [1, 3, 5, 6, 7],
   },
   {
     name: "flight",
     path: path.join(__dirname, "../../data/flights.csv"),
     query:
-      "INSERT INTO Flight (flight_status, flight_date, route_id, airplane_IATA, airplane_ICAO) VALUES ?",
+      "INSERT INTO Flight (id, flight_status, flight_date, route_id, airplane_id) VALUES ?",
     indices: [0, 1, 2, 3, 4],
-  },
+  }
 ];
 
 connection.connect();
