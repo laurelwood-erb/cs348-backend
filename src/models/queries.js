@@ -29,6 +29,38 @@ exports.queryList = [
 
   select name from airline as A where A.id in (select airline_id from Q4);
   `,
-  ``,
-  ``,
+  `
+  with airport1 as
+  (select id from airport where name = 'Kelowna International Airport'),
+  airport2 as 
+  (select id from airport where name = 'Calgary International Airport')
+  select name from Airplane as A
+  where id in (select airplane_id from Flight as F join Route as R on (F.route_id = R.id)
+        where (R.source_airport_id in (select * from airport1) and R.destination_airport_id in (select * from airport2)) 
+              or (R.source_airport_id in (select * from airport2) and R.destination_airport_id in (select * from airport2)))
+  `,
+  `
+  WITH Departure AS 
+  (SELECT ID FROM Airport WHERE country = ?), 
+  Destination AS 
+  (SELECT ID FROM Airport WHERE country = ?), 
+  All_Routes as (
+    SELECT * FROM Route 
+    WHERE source_airport_id in (select * from Departure) 
+      and destination_airport_id in (select * from Destination)
+  )
+  
+  select distinct name from airline as A where A.id 
+  in (select airline_id from All_Routes);
+  `, 
+  `
+  with Q7 as 
+  (select R.source_airport_id, R.destination_airport_id
+  from (select id from Airplane where name = ?) as A, Flight as F, Route as R 
+  where A.id = F.airplane_id and F.route_id = R.id)
+
+  select distinct country from Airport, Q7
+  where Airport.id = Q7.source_airport_id or Airport.id =  Q7.destination_airport_id
+  order by country
+  `,
 ];
