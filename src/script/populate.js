@@ -53,7 +53,7 @@ const data = [
     query:
       "INSERT INTO Flight (id, flight_status, flight_date, route_id, airplane_id) VALUES ?",
     indices: [0, 1, 2, 3, 4],
-  },
+  }
 ];
 
 connection.connect();

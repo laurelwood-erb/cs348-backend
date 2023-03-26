@@ -86,7 +86,7 @@ const tables = [
         airplane_id VARCHAR(4),
         PRIMARY KEY (id),
         foreign key (route_id) references Route(id) ON DELETE CASCADE,
-        foreign key (airplane_IATA) references Airplane(IATA) ON DELETE CASCADE)`,
+        foreign key (airplane_id) references Airplane ON DELETE CASCADE)`,
 ];
 
 // create connection
