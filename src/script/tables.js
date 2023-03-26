@@ -32,54 +32,72 @@ sqlconnection.end();
 // tables to be created
 const tables = [
   `CREATE TABLE IF NOT EXISTS Airline
-          (id numeric(5,0),
-          name varchar(256),
-          alias varchar(256),
-          IATA varchar(2),
-          ICAO varchar(3),
-          callsign varchar(256),
-          country varchar(256),
-          active varchar(1) check (active = "Y" or active = "N"),
-          primary key (id))`,
+        (id NUMERIC(5,0),
+        name VARCHAR(256),
+        alias VARCHAR(256),
+        IATA VARCHAR(2),
+        ICAO VARCHAR(3),
+        callsign VARCHAR(256),
+        country VARCHAR(256) NOT NULL,
+        active VARCHAR(1) check (active = "Y" or active = "N"),
+        PRIMARY KEY (id),
+        CONSTRAINT AirlineIATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
+        CONSTRAINT AirlineIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{2}$'),
+        CONSTRAINT AirlineICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{3}$'))`,
   `CREATE TABLE IF NOT EXISTS Airport
-          (id numeric(5,0),
-          name varchar(256),
-          city varchar(256),
-          country varchar(256),
-          IATA varchar(4),
-          ICAO varchar(5),
-          latitude real,
-          longitude real,
-          altitude smallint,
-          timezone numeric(3),
-          DST  varchar(1),
-          primary key (id))`,
+        (id NUMERIC(5,0),
+        name VARCHAR(256) NOT NULL,
+        city VARCHAR(256) NOT NULL,
+        country VARCHAR(256) NOT NULL,
+        IATA VARCHAR(4),
+        ICAO VARCHAR(5),
+        latitude REAL NOT NULL,
+        longitude REAL NOT NULL,
+        altitude SMALLINT NOT NULL,
+        timezone NUMERIC(3) NOT NULL,
+        PRIMARY KEY (id),
+        CONSTRAINT AirportIATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
+        CONSTRAINT AirportIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
+        CONSTRAINT AirportICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
   `CREATE TABLE IF NOT EXISTS Route
-          (id int NOT NULL AUTO_INCREMENT,
-          airline_id numeric(5,0),
-          source_airport_id numeric(5,0),
-          destination_airport_id numeric(5,0),
-          codeshare varchar(1),
-          equipment varchar(40),
-          primary key (id),
-          foreign key (airline_id) references Airline(id),
-          foreign key (source_airport_id) references Airport(id),
-          foreign key (destination_airport_id) references Airport(id))`,
+        (id NUMERIC(6,0),
+        airline_id NUMERIC(5,0),
+        source_airport_id NUMERIC(5,0),
+        destination_airport_id NUMERIC(5,0),
+        codeshare VARCHAR(1),
+        equipment VARCHAR(40),
+        PRIMARY KEY (id),
+        foreign key (airline_id) references Airline(id) ON DELETE CASCADE,
+        foreign key (source_airport_id) references Airport(id) ON DELETE CASCADE,
+        foreign key (destination_airport_id) references Airport(id) ON DELETE CASCADE)`,
   `CREATE TABLE IF NOT EXISTS Airplane
-          (name varchar(256),
-          IATA varchar(4),
-          ICAO varchar(5),
-          primary key (ICAO))`,
+        (id NUMERIC(4,0),
+        name VARCHAR(256),
+        IATA VARCHAR(4),
+        ICAO VARCHAR(5),
+        PRIMARY KEY (id),
+        CONSTRAINT AirplaneIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
+        CONSTRAINT AirplaneICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
   `CREATE TABLE IF NOT EXISTS Flight
-          (id int NOT NULL AUTO_INCREMENT,
-          flight_status varchar(9),
-          flight_date varchar(10),
-          route_id int,
-          airplane_IATA varchar(4),
-          airplane_ICAO varchar(5),
-          primary key (id),
-          foreign key (route_id) references Route(id),
-          foreign key (airplane_ICAO) references Airplane(ICAO))`,
+        (id NUMERIC(5,0),
+        flight_status VARCHAR(9),
+        flight_date VARCHAR(10),
+        route_id NUMERIC(6,0),
+        airplane_id NUMERIC(4,0),
+        PRIMARY KEY (id),
+        foreign key (route_id) references Route(id) ON DELETE CASCADE,
+        foreign key (airplane_id) references Airplane(id) ON DELETE CASCADE)`
+];
+
+// indexs to be created
+const indexs = [
+  `CREATE INDEX AirlineNameIndex on Airline(name)`,
+  `CREATE INDEX AirportIDIndex on Airport(ID)`,
+  `CREATE INDEX AirportTZIndex on Airport(Timezone)`,
+  `CREATE INDEX AirportLocationIndex on Airport(Country, City)`,
+  `CREATE INDEX RouteSourceIDIndex on Route(source_airport_id)`,
+  `CREATE INDEX RouteDestinationIDIndex on Route(destination_airport_ID)`,
+  `CREATE INDEX RouteAirlineIDIndex on Route(Airline_ID)` 
 ];
 
 // create connection
@@ -99,6 +117,13 @@ tables.forEach(function (table) {
     if (err) throw err;
     console.log("Table created");
   });
+});
+
+indexs.forEach(function (index) {
+  connection.query(index, function(err, result) {
+    if (err) throw err;
+    console.log("Indexs created");
+  })
 });
 
 // end the connection
