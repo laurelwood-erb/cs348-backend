@@ -76,6 +76,7 @@ const tables = [
           flight_date varchar(10),
           route_id int,
           airplane_IATA varchar(4),
+          airplane_ICAO varchar(5),
           primary key (id),
           foreign key (route_id) references Route(id),
           foreign key (airplane_IATA) references Airplane(IATA))`,
