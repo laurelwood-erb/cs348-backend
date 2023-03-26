@@ -34,11 +34,11 @@ exports.queryList = [
   WITH 
   Departure AS 
   (SELECT ID FROM cs348.Airport WHERE country = 
-  origin_country), 
+  ?), 
   
   Destination AS 
   (SELECT ID FROM cs348.Airport WHERE country = 
-  destination_country), 
+  ?), 
   
   All_Routes as (
   SELECT * FROM Route 

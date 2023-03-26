@@ -25,7 +25,7 @@ exports.queryParam = (queryNum) => async (req, res) => {
       params,
       function (err, results) {
         if (err) throw err;
-        return res.json(results[0]["count(*)"]);
+        return res.json(results);
       }
     );
   } catch (err) {
