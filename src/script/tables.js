@@ -41,9 +41,9 @@ const tables = [
         country VARCHAR(256) NOT NULL,
         active VARCHAR(1) check (active = "Y" or active = "N"),
         PRIMARY KEY (id),
-        CONSTRAINT IATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
-        CONSTRAINT IATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{2}$'),
-        CONSTRAINT IATAForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{3}$'))`,
+        CONSTRAINT AirlineIATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
+        CONSTRAINT AirlineIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{2}$'),
+        CONSTRAINT AirlineICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{3}$'))`,
   `CREATE TABLE IF NOT EXISTS Airport
         (id NUMERIC(5,0),
         name VARCHAR(256) NOT NULL,
@@ -56,11 +56,11 @@ const tables = [
         altitude SMALLINT NOT NULL,
         timezone NUMERIC(3) NOT NULL,
         PRIMARY KEY (id),
-        CONSTRAINT IATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
-        CONSTRAINT IATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
-        CONSTRAINT IATAForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
+        CONSTRAINT AirportIATAorICAO CHECK (NOT (IATA is NULL AND ICAO is NULL)),
+        CONSTRAINT AirportIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
+        CONSTRAINT AirportICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
   `CREATE TABLE IF NOT EXISTS Route
-        (id int NOT NULL AUTO_INCREMENT,
+        (id NUMERIC(6,0),
         airline_id NUMERIC(5,0),
         source_airport_id NUMERIC(5,0),
         destination_airport_id NUMERIC(5,0),
@@ -76,17 +76,17 @@ const tables = [
         IATA VARCHAR(4),
         ICAO VARCHAR(5),
         PRIMARY KEY (id),
-        CONSTRAINT IATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
-        CONSTRAINT IATAForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
+        CONSTRAINT AirplaneIATAForm CHECK (IATA is NULL OR IATA REGEXP '^[A-Z0-9]{3}$'),
+        CONSTRAINT AirplaneICAOForm CHECK (ICAO is NULL OR ICAO REGEXP '^[A-Z0-9]{4}$'))`,
   `CREATE TABLE IF NOT EXISTS Flight
         (id NUMERIC(5,0),
         flight_status VARCHAR(9),
         flight_date VARCHAR(10),
-        route_id int,
-        airplane_id VARCHAR(4),
+        route_id NUMERIC(6,0),
+        airplane_id NUMERIC(4,0),
         PRIMARY KEY (id),
         foreign key (route_id) references Route(id) ON DELETE CASCADE,
-        foreign key (airplane_id) references Airplane ON DELETE CASCADE)`,
+        foreign key (airplane_id) references Airplane(id) ON DELETE CASCADE)`
 ];
 
 // create connection
