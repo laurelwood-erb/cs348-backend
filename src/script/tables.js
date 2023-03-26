@@ -89,6 +89,17 @@ const tables = [
         foreign key (airplane_id) references Airplane(id) ON DELETE CASCADE)`
 ];
 
+// indexs to be created
+const indexs = [
+  `CREATE INDEX AirlineNameIndex on Airline(name)`,
+  `CREATE INDEX AirportIDIndex on Airport(ID)`,
+  `CREATE INDEX AirportTZIndex on Airport(Timezone)`,
+  `CREATE INDEX AirportLocationIndex on Airport(Country, City)`,
+  `CREATE INDEX RouteSourceIDIndex on Route(source_airport_id)`,
+  `CREATE INDEX RouteDestinationIDIndex on Route(destination_airport_ID)`,
+  `CREATE INDEX RouteAirlineIDIndex on Route(Airline_ID)` 
+];
+
 // create connection
 const connection = mysql.createConnection({
   host: DATABASE_HOST,
@@ -106,6 +117,13 @@ tables.forEach(function (table) {
     if (err) throw err;
     console.log("Table created");
   });
+});
+
+indexs.forEach(function (index) {
+  connection.query(index, function(err, result) {
+    if (err) throw err;
+    console.log("Indexs created");
+  })
 });
 
 // end the connection
