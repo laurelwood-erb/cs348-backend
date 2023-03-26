@@ -1,4 +1,17 @@
-GET http://localhost:8080/api/first/-6 HTTP/1.1
+###
+GET http://localhost:8080/api/first/-5 HTTP/1.1
 
 ###
-GET http://localhost:8080/ HTTP/1.1
+GET http://localhost:8080/api/second/146 HTTP/1.1
+
+###
+GET http://localhost:8080/api/third/Canada HTTP/1.1
+
+###
+GET http://localhost:8080/api/fourth/146/146 HTTP/1.1
+
+###
+GET http://localhost:8080/api/fifth/-5 HTTP/1.1
+
+###
+GET http://localhost:8080/api/sixth/Canada/Cuba HTTP/1.1
