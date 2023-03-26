@@ -69,7 +69,7 @@ const tables = [
           (name varchar(256),
           IATA varchar(4),
           ICAO varchar(5),
-          primary key (IATA, ICAO))`,
+          primary key (ICAO))`,
   `CREATE TABLE IF NOT EXISTS Flight
           (id int NOT NULL AUTO_INCREMENT,
           flight_status varchar(9),
@@ -79,7 +79,7 @@ const tables = [
           airplane_ICAO varchar(5),
           primary key (id),
           foreign key (route_id) references Route(id),
-          foreign key (airplane_IATA) references Airplane(IATA))`,
+          foreign key (airplane_ICAO) references Airplane(ICAO))`,
 ];
 
 // create connection
