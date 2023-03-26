@@ -31,9 +31,9 @@ exports.queryList = [
   `,
   `
   with airport1 as
-  (select id from airport where name = 'Kelowna International Airport'),
+  (select id from airport where name = ?),
   airport2 as 
-  (select id from airport where name = 'Calgary International Airport')
+  (select id from airport where name = ?)
   select name from Airplane as A
   where id in (select airplane_id from Flight as F join Route as R on (F.route_id = R.id)
         where (R.source_airport_id in (select * from airport1) and R.destination_airport_id in (select * from airport2)) 
