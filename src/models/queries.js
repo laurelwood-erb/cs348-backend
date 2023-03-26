@@ -30,5 +30,23 @@ exports.queryList = [
   select name from airline as A where A.id in (select airline_id from Q4);
   `,
   ``,
-  ``,
+  `
+  WITH 
+  Departure AS 
+  (SELECT ID FROM cs348.Airport WHERE country = 
+  origin_country), 
+  
+  Destination AS 
+  (SELECT ID FROM cs348.Airport WHERE country = 
+  destination_country), 
+  
+  All_Routes as (
+  SELECT * FROM Route 
+  WHERE source_airport_id in (select * from Departure) 
+  and destination_airport_id in (select * from 
+  Destination))
+  
+  select distinct name from airline as A where A.id 
+  in (select airline_id from All_Routes);
+  `,
 ];
