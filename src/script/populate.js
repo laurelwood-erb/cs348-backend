@@ -11,7 +11,7 @@ const DATABASE_PASSWORD = "123456789";
 const DATABASE_NAME = "cs348";
 
 // create connection
-const connection = mysql.createConnection({
+const sqlconnection = mysql.createConnection({
   host: DATABASE_HOST,
   user: DATABASE_USER,
   password: DATABASE_PASSWORD,
@@ -53,13 +53,10 @@ const data = [
     query:
       "INSERT IGNORE INTO Flight (id, flight_status, flight_date, route_id, airplane_id) VALUES ?",
     indices: [0, 1, 2, 3, 4],
-  }
+  },
 ];
 
-connection.connect();
-
-// insert each table
-data.forEach((table_info) => {
+const populate = (table_info, promise) => {
   const table_data = [];
   fs.createReadStream(table_info.path, "utf8")
     .pipe(
@@ -81,7 +78,7 @@ data.forEach((table_info) => {
       table_data.push(data);
     })
     .on("end", async () => {
-      connection.query(
+      sqlconnection.query(
         table_info.query,
         [
           table_data.map((data) => {
@@ -91,7 +88,22 @@ data.forEach((table_info) => {
         function (error, result) {
           console.log("error", error);
           console.log("result", result);
+          promise();
         }
       );
     });
+};
+
+sqlconnection.connect();
+
+populate(data[0], () => {
+  populate(data[1], () => {
+    populate(data[2], () => {
+      populate(data[3], () => {
+        populate(data[4], () => {
+          sqlconnection.end();
+        });
+      });
+    });
+  });
 });
