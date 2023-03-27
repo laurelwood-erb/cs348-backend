@@ -1,3 +1,5 @@
+/** @format */
+
 const queries = require("../models/queries");
 const mysql = require("mysql2");
 

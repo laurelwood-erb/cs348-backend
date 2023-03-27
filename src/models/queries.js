@@ -30,15 +30,21 @@ exports.queryList = [
   select name from airline as A where A.id in (select airline_id from Q4);
   `,
   `
-  with airport1 as
-  (select id from airport where name = ?),
-  airport2 as 
-  (select id from airport where name = ?)
-  select name from Airplane as A
-  where id in (select airplane_id from Flight as F join Route as R on (F.route_id = R.id)
-        where (R.source_airport_id in (select * from airport1) and R.destination_airport_id in (select * from airport2)) 
-              or (R.source_airport_id in (select * from airport2) and R.destination_airport_id in (select * from airport2)))
-  `,
+  WITH flight AS
+  (SELECT * FROM Flight WHERE route_id IN (SELECT id FROM Route AS R
+            WHERE R.source_airport_id = ?
+            AND R.destination_airport_id = ?))
+
+  SELECT flight.id AS flight_id, 
+         flight.flight_status, 
+         flight.flight_date, 
+         flight.route_id,
+         flight.airplane_id, 
+         Airplane.name AS airplane_name
+  FROM Airplane
+  INNER JOIN flight
+  ON Airplane.id = flight.airplane_id
+  ORDER BY flight.flight_date`,
   `
   WITH 
   Departure AS 
