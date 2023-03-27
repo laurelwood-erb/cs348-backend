@@ -102,7 +102,7 @@ Following is the list of features that we are currently supporting
 <br>
 
 ## Sample Query and Output
-- As mentioned, you can find sample queries and output under `./src/samples`
+- As mentioned, you can find sample queries and output under `./src/sample_queires`
 - You will see that for each feature, there are 3 type of files, which are `.sql`, `.out`, `.csv`
 - `.sql` will contain sample query itself
 - `.out` and `.csv` both hold the output. Hence, their content is essentially the same.
