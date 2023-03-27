@@ -80,6 +80,13 @@
 
 <br>
 
+## Using our Aplication
+- You can always click on our team's name, "Laurelwood-erb", on left top corner, which will be served as "Home button."
+- Once you click to it, you will be able to see all the list of features that we support.
+- Click onto a feature that you wish to try on! Go ahead and give inputs to each field and click "submit"
+
+<br>
+
 ## Features Supported
 
 Following is the list of features that we are currently supporting
