@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
 
 exports.queryParam = (queryNum) => async (req, res) => {
   const params =
-    queryNum < 3
+    queryNum < 3 || queryNum == 7
       ? [req.params["paramVar"]]
       : [req.params["paramVar1"], req.params["paramVar2"]];
 

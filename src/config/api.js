@@ -24,6 +24,7 @@ app.get("/api/third/:paramVar", queryFunction.queryParam(2));
 app.get("/api/fourth/:paramVar1/:paramVar2", queryFunction.queryParam(3));
 app.get("/api/fifth/:paramVar1/:paramVar2", queryFunction.queryParam(4));
 app.get("/api/sixth/:paramVar1/:paramVar2", queryFunction.queryParam(5));
+app.get("/api/seventh/:paramVar", queryFunction.queryParam(6));
 
 app.post("/api/query", sql.executeQuery);
 
