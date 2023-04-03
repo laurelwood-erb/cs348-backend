@@ -67,8 +67,8 @@ exports.queryList = [
   `
   with Q7 as 
   (select R.source_airport_id, R.destination_airport_id
-  from (select id from Airplane where name = ?) as A, Flight as F, Route as R 
-  where A.id = F.airplane_id and F.route_id = R.id)
+  from Flight as F, Route as R 
+  where ? = F.airplane_id and F.route_id = R.id)
 
   select distinct country from Airport, Q7
   where Airport.id = Q7.source_airport_id or Airport.id =  Q7.destination_airport_id
