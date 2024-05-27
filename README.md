@@ -1,4 +1,4 @@
-# Backend for CS348 Group Project by Laurelwood-Erb (PG13)
+# Backend for CS348 Group Project by Laurelwood-Erb (PG13!)
 
 ## Requirements
 - You need followings installed in your device
